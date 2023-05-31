@@ -265,12 +265,6 @@
     padding-bottom: 80px;
 }
 
-.sign {
-    padding-top: 40px;
-    padding-left: 140px;
-    padding-right: 140px;
-}
-
 .sign .tabs .indicator {
     background-color: #93d49a;
 }
@@ -687,13 +681,16 @@
     text-align: center;
     margin-left: 5%;
 }
+
+.log-in{
+    color: #039be5;
 }
 
 @media only screen and (max-width: 992px) {
-    nav ul a.btn {
-        margin: 5px;
+    nav ul li a.btn {
+        margin: 5px !important;
     }
     .nav-wrapper-2 .brand {
-        width: 50px;
+        width: 60px;
     }
 }
