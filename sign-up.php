@@ -29,7 +29,8 @@ require $nav; ?>
                                     <div class="row">
                                         <div class="col s6">
                                             <i class="material-icons prefix">email</i>
-                                            <input id="icon_prefix" type="text" placeholder="Email" name="email" class="validate" required>
+                                            <input id="icon_prefix" type="text" placeholder="Email" name="email"
+                                                   class="validate" required>
                                         </div>
 
                                         <div class="col s6">
@@ -67,7 +68,8 @@ require $nav; ?>
 
                                         <div class="col s6">
                                             <i class="material-icons prefix">business</i>
-                                            <input id="icon_prefix" placeholder="City" type="text" name="city" class="validate" required>
+                                            <input id="icon_prefix" placeholder="City" type="text" name="city"
+                                                   class="validate" required>
                                         </div>
 
                                         <div class="col s6 meh">
@@ -75,6 +77,8 @@ require $nav; ?>
                                             <input id="icon_prefix" type="text" name="address" class="validate"
                                                    required placeholder="Address">
                                         </div>
+                                    </div>
+                                    <div class="row">
                                         <div class="center-align">
                                             <button type="submit" id="confirmeds" name="signup"
                                                     class="btn meh button-rounded waves-effect waves-light ">Sign up
@@ -92,10 +96,10 @@ require $nav; ?>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-<?php require 'includes/footer.php'; ?>
+    <?php require 'includes/footer.php'; ?>

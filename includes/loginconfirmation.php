@@ -43,7 +43,7 @@ if (isset($_POST['login'])) {
             $_SESSION['email'] = $user_email;
             $_SESSION['role'] = 'admin';
             $_SESSION['logged_in'] = 'True';
-            echo "<meta http-equiv='refresh' content='0;url=http://localhost:8888/c218/admin/index' />";
+            echo "<meta http-equiv='refresh' content='0;url=http://c218.cdiouf.ovh/admin/index' />";
         } else {
             $_SESSION['id'] = $user_id;
             $_SESSION['firstname'] = $user_firstname;

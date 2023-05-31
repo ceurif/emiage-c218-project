@@ -42,10 +42,10 @@
 
     $(function () {
         $(".searching").typed({
-            strings: ["Bijou",
-                "Collier",
-                "Diamant",
-                "Or",],
+            strings: ["Bijou en diamant",
+                "Collier tribal",
+                "Diamant noir",
+                "Pendentif Or",],
             typeSpeed: -8
         });
     });

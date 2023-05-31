@@ -100,7 +100,7 @@ require $nav; ?>
                         if (isset($_POST['buy'])) {
 
                             if (!isset($_SESSION['logged_in'])) {
-                                echo "<meta http-equiv='refresh' content='0;url=http://localhost:8888/c218/sign' />";
+                                echo "<meta http-equiv='refresh' content='0;url=http://c218.cdiouf.ovh/sign' />";
                             } else {
                                 $quantity = $_POST['quantity'];
 
