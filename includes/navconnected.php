@@ -1,6 +1,6 @@
 <ul id="dropdown2" class="dropdown-content">
-    <li><a class="blue-text" href="editprofile">Edit</a></li>
-    <li><a class="blue-text" href="includes/logout">Log out</a></li>
+    <li><a class="blue-text" href="editprofile.php">Edit</a></li>
+    <li><a class="blue-text" href="includes/logout.php">Log out</a></li>
 </ul>
 <div class="navbar-fixed">
     <nav class="navblack">
