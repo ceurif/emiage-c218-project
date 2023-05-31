@@ -42,10 +42,10 @@
 
     $(function () {
         $(".searching").typed({
-            strings: ["PHP et Mysql",
-                "Java Cookbook",
-                "Macbook pro retina 2015",
-                "Google Pixel XL",],
+            strings: ["Bijou",
+                "Collier",
+                "Diamant",
+                "Or",],
             typeSpeed: -8
         });
     });
