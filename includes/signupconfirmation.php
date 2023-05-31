@@ -22,7 +22,7 @@ if (isset($_POST['signup'])) {
         if ($connection->query($query) === TRUE) {
             echo "<div class='center - align'>
          <h5 class='black - text'>Welcome <span class='green - text'>$firstname</span> Please Log In</h5><br><br>
-         <a class='button - rounded btn waves - effects waves - light' href='sign'>Log In</a>
+         <a class='button - rounded btn waves - effects waves - light' href='sign.php'>Log In</a>
          </div>";
 
         } else {
