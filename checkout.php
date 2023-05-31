@@ -2,9 +2,9 @@
 session_start();
 
 if (!isset($_SESSION['logged_in']) && !isset($_SESSION['item'])) {
-    header('Location: sign');
+    header('Location: sign.php');
 } elseif ($_SESSION['item'] < 1) {
-    header('Location: index');
+    header('Location: index.php');
 } else {
     $nav = 'includes/navconnected.php';
     $idsess = $_SESSION['id'];
@@ -24,9 +24,9 @@ require $nav; ?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Home</a>
-                    <a href="cart" class="breadcrumb">Cart</a>
-                    <a href="checkout" class="breadcrumb">Checkout</a>
+                    <a href="index.php" class="breadcrumb">Home</a>
+                    <a href="cart.php" class="breadcrumb">Cart</a>
+                    <a href="checkout.php" class="breadcrumb">Checkout</a>
                 </div>
             </div>
         </nav>

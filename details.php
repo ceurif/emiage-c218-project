@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['logged_in'])) {
-    header('Location: sign');
+    header('Location: sign.php');
 } else {
     $idsess = $_SESSION['id'];
 }

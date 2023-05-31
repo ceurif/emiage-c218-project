@@ -156,7 +156,7 @@ img) VALUES ('
          <button class='btn green waves-effects waves-light'>Welcome $username</button><br><br>
          </div>";
 
-        header('Location: login');
+        header('Location: login.php');
     } else {
         echo "<button class='btn red btn-large waves-effects light-effects'>Error: " . $query . "</button><br><br><br>" . $connection->error;
     }

@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['logged_in'])) {
-    header('Location: sign');
+    header('Location: sign.php');
 } else {
     $sessid = $_SESSION['id'];
 }
@@ -15,8 +15,8 @@ require 'includes/navconnected.php'; //require $nav;?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">C218 Shop</a>
-                    <a href="editprofile" class="breadcrumb">Edit Profile</a>
+                    <a href="index.php" class="breadcrumb">C218 Shop</a>
+                    <a href="editprofile.php" class="breadcrumb">Edit Profile</a>
                 </div>
             </div>
         </nav>

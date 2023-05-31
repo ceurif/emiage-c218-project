@@ -5,7 +5,7 @@ session_start();
 if (!isset($_SESSION['logged_in'])) {
     $nav = 'includes/nav.php';
 } elseif ($_SESSION['logged_in'] == 'True') {
-    header('Location: index');
+    header('Location: index.php');
 } else {
     $nav = 'includes/navconnected.php';
     $idsess = $_SESSION['id'];

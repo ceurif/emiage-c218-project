@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : mer. 31 mai 2023 à 02:31
+-- Généré le : mer. 31 mai 2023 à 16:13
 -- Version du serveur :  5.7.34
 -- Version de PHP : 7.4.21
 
@@ -182,11 +182,10 @@ CREATE TABLE `product` (
 
 INSERT INTO `product` (`id`, `id_category`, `name`, `description`, `price`, `id_picture`, `thumbnail`, `promo`) VALUES
 (7, 1, 'Lord of ring', '5.50-inch 1440x2560 display powered by 1.6GHz octa-core processor alongside 4GB of RAM and 12-megapixel', 560, 2, 'bague-p.jpeg', ''),
-(8, 2, 'Bracelet Or', 'Features 3G, 4.7â€³ LED-backlit IPS LCD display, 12 MP camera, Wi-Fi, GPS, Bluetooth', 700, 8, 'bracelet-p.jpg', ''),
-(9, 3, 'Boucle d\'oreilles', ' GoPro HERO5 Black features Supports 4K30, 2.7K60, 1080p120 Video, Capture 12MP Photos at 30fps', 450, 9, 'boucle-p.jpeg', '1'),
+(9, 3, 'Boucle d&apos;oreilles', ' GoPro HERO5 Black features Supports 4K30, 2.7K60, 1080p120 Video, Capture 12MP Photos at 30fps', 450, 9, 'boucle-p.jpeg', '1'),
 (11, 4, 'Collier de la sagesse', 'The Oculus Rift is a virtual reality system that completely immerses you inside virtual worlds', 600, 10, 'collier-p.jpg', '1'),
 (12, 5, 'Chaîne en diamant', 'In-depth review of the MSI GP62-2QEi781FD (Intel Core i7 5700HQ, NVIDIA GeForce GTX 950M, 15.6\", 2.3 kg) ... The MSI GE series is already the manufacturer\'s entry-level gaming series. ..... ', 839, 12, 'chaine-p.jpeg', ''),
-(13, 6, 'Médaille ancienne', 'Amazon Echo is a hands-free speaker you control with your voice. Echo connects to the Alexa Voice Service to play music, provide information, news, sports ...', 179, 13, 'medaille-p.jpeg', '');
+(13, 6, 'M&eacute;daille ancienne', 'Amazon Echo is a hands-free speaker you control with your voice. Echo connects to the Alexa Voice Service to play music, provide information, news, sports ...', 179, 13, 'medaille-p.jpeg', '');
 
 -- --------------------------------------------------------
 
@@ -212,7 +211,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `email`, `firstname`, `lastname`, `password`, `address`, `city`, `country`, `role`) VALUES
 (5, 'diouf-cherif@live.fr', 'Cherif', 'Diouf', '21232f297a57a5a743894a0e4a801fc3', 'N 23 Dakar', 'Dakar', 'Senegal', 'admin'),
-(8, 'jngoga82@gmail.com', 'Justin', 'Uwayo', 'ee11cbb19052e40b07aac0ca060c23ee', 'N 20 Thies', 'Thies', 'Senegal', 'client');
+(8, 'jngoga82@gmail.com', 'Justin', 'Uwayo', 'ee11cbb19052e40b07aac0ca060c23ee', 'N 20 Thies', 'Thies', 'Senegal', 'client'),
+(9, 'test@test.com', 'Cherif', 'Diouf', 'e7247759c1633c0f9f1485f3690294a9', 'HLM FASS', 'Dakar', 'Senegal', 'client');
 
 --
 -- Index pour les tables déchargées
@@ -280,13 +280,13 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT pour la table `command`
 --
 ALTER TABLE `command`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 
 --
 -- AUTO_INCREMENT pour la table `details_command`
 --
 ALTER TABLE `details_command`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT pour la table `pictures`
@@ -298,13 +298,13 @@ ALTER TABLE `pictures`
 -- AUTO_INCREMENT pour la table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

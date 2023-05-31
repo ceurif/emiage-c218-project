@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_GET['id'])) {
-    header('Location: index');
+    header('Location: index.php');
 }
 
 if (!isset($_SESSION['logged_in'])) {
@@ -21,7 +21,7 @@ require $nav; ?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Home</a>
+                    <a href="index.php" class="breadcrumb">Home</a>
                     <a href="product.php?id=<? $id_product; ?>" class="breadcrumb">Product</a>
                 </div>
             </div>

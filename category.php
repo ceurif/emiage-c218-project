@@ -9,7 +9,7 @@ if (!isset($_SESSION['logged_in'])) {
 }
 
 if (!isset($_GET['id'])) {
-    header('Location: index');
+    header('Location: index.php');
 }
 
 $id_category = $_GET['id'];
@@ -20,7 +20,7 @@ require $nav; ?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Home</a>
+                    <a href="index.php" class="breadcrumb">Home</a>
                     <a href="category.php?id=<?= $id_category; ?>" class="breadcrumb">Category</a>
                 </div>
             </div>

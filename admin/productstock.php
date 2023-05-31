@@ -3,7 +3,7 @@
 session_start();
 
 if ($_SESSION['role'] !== 'admin') {
-    header('Location: ../index');
+    header('Location: ../index.php');
 }
 
 $category = $_GET['id'];
@@ -16,9 +16,9 @@ require 'includes/navconnected.php'; //require $nav;?>
         <nav>
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <a href="index" class="breadcrumb">Dashboard</a>
-                    <a href="products" class="breadcrumb">Stock</a>
-                    <a href="productstock" class="breadcrumb">Products</a>
+                    <a href="index.php" class="breadcrumb">Dashboard</a>
+                    <a href="products.php" class="breadcrumb">Stock</a>
+                    <a href="productstock.php" class="breadcrumb">Products</a>
                 </div>
             </div>
         </nav>

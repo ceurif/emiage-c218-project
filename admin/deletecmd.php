@@ -13,6 +13,6 @@ if (isset($_GET['id']) && isset($_GET['userid'])) {
 
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 } else {
-    header('Location: ../sign');
+    header('Location: ../sign.php');
 }
 ?>
